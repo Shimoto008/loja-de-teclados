@@ -1,6 +1,8 @@
 <div>
-  <p>FILTRAR:</p>
-   <button>Marcas</button>
+  <strong>FILTRAR:</strong>
+   <button *ngIf="mostrarBotaoMarca" (click)="escolherMarca()">Marcas</button>
+   <app-brand-selector *ngIf="MostrarMarcas" (BrandSelected)="onBrandSelected($event)"></app-brand-selector>
+   <button *ngIf="SelectedBrand">{{SelectedBrand}}</button>
     <button>Ordenar por</button>
 
 </div>

@@ -8,6 +8,7 @@ import { NavbarComponent } from './_components/navbar/navbar.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { BaseUiComponent } from './_components/base-ui/base-ui.component';
 import { MainComponent } from './_components/main/main.component';
+import { BrandSelectorComponent } from './brand-selector/brand-selector.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { MainComponent } from './_components/main/main.component';
     FooterComponent,
     BaseUiComponent,
     MainComponent,
+    BrandSelectorComponent,
   ],
   imports: [
     BrowserModule,

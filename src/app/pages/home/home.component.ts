@@ -7,4 +7,20 @@ import { Component, DoCheck, OnDestroy, OnInit } from '@angular/core';
 })
 export class HomeComponent {
 
+  mostrarBotaoMarca = true
+
+  MostrarMarcas = false
+  SelectedBrand: string | null = null
+
+  escolherMarca(){
+    this.MostrarMarcas = !
+    this.MostrarMarcas
+  }
+
+  onBrandSelected(Brand: string){
+    this.SelectedBrand = Brand
+    this.MostrarMarcas = false
+    this.mostrarBotaoMarca = false
+  }
+
 }
