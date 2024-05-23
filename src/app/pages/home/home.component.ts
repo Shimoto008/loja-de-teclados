@@ -23,4 +23,21 @@ export class HomeComponent {
     this.mostrarBotaoMarca = false
   }
 
+
+  mostrarBotaoOrdem = true
+
+  MostrarOrdem = false
+  SelectedOrdem: string | null = null
+
+  escolherOrdem(){
+    this.MostrarOrdem = !
+    this.MostrarOrdem
+  }
+
+  onOrdemSelected(Ordem: string){
+    this.SelectedOrdem = Ordem
+    this.MostrarOrdem = false
+    this.mostrarBotaoOrdem = false
+  }
+
 }

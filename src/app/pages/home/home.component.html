@@ -1,9 +1,15 @@
 <div>
   <strong>FILTRAR:</strong>
+
+
    <button *ngIf="mostrarBotaoMarca" (click)="escolherMarca()">Marcas</button>
    <app-brand-selector *ngIf="MostrarMarcas" (BrandSelected)="onBrandSelected($event)"></app-brand-selector>
    <button *ngIf="SelectedBrand">{{SelectedBrand}}</button>
-    <button>Ordenar por</button>
+
+
+    <button *ngIf="mostrarBotaoOrdem" (click)="escolherOrdem()" >Ordenar por</button>
+    <app-ordem-selector *ngIf="MostrarOrdem" (OrdemSelected)="onOrdemSelected($event)"></app-ordem-selector>
+    <button *ngIf="SelectedOrdem">{{SelectedOrdem}}</button>
 
 </div>
 
