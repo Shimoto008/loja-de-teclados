@@ -6,7 +6,7 @@
 
 .container{
 
-  height: 300px;
+  height: 500px;
   background-color: white;
   margin: 0.5%;
   padding: 20px;
@@ -29,6 +29,12 @@ strong{
 span{
   color: rgb(160, 159, 159);
   font-size: 15px;
+}
+
+
+img{
+  width: 200px;
+  height: 200px;
 }
 
 @media (max-width: 1200px){
@@ -55,6 +61,8 @@ span{
     flex: 1 0 100%; /*1 itens*/
   }
 }
+
+
 
 
 

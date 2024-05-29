@@ -1,16 +1,33 @@
-
 <div>
   <strong>FILTRAR:</strong>
 
+  <div class="dropdown-container">
+    <button *ngIf="!SelectedBrand" (click)="escolherMarca()">Marcas</button>
+    <div class="dropdown-content" *ngIf="MostrarMarcas">
+      <app-brand-selector
+        (BrandSelected)="onBrandSelected($event)">
+      </app-brand-selector>
+  </div>
+  </div>
 
-   <button *ngIf="mostrarBotaoMarca" (click)="escolherMarca()">Marcas</button>
-   <app-brand-selector *ngIf="MostrarMarcas" (BrandSelected)="onBrandSelected($event)"></app-brand-selector>
-   <button *ngIf="SelectedBrand">{{SelectedBrand}}</button>
 
+  <button class="SelectedBrand" *ngIf="SelectedBrand">
+    {{ SelectedBrand }}
+  </button>
 
-    <button *ngIf="mostrarBotaoOrdem" (click)="escolherOrdem()" >Ordenar por</button>
-    <app-ordem-selector *ngIf="MostrarOrdem" (OrdemSelected)="onOrdemSelected($event)"></app-ordem-selector>
-    <button *ngIf="SelectedOrdem">{{SelectedOrdem}}</button>
+  <div class="dropdown-container">
+    <button *ngIf="!SelectedOrdem" (click)="escolherOrdem()">
+      Ordenar por
+    </button>
+    <div class="dropdown-content" *ngIf="MostrarOrdem">
+      <app-ordem-selector
+        (OrdemSelected)="onOrdemSelected($event)"
+      ></app-ordem-selector>
 
+    </div>
+
+  </div>
+  <button class="SelectedOrdem" *ngIf="SelectedOrdem">
+    {{ SelectedOrdem }}
+  </button>
 </div>
-

@@ -8,9 +8,12 @@ import { Component, DoCheck, OnDestroy, OnInit } from '@angular/core';
 export class HomeComponent {
 
   mostrarBotaoMarca = true
-
   MostrarMarcas = false
   SelectedBrand: string | null = null
+
+  mostrarBotaoOrdem = true
+  MostrarOrdem = false
+  SelectedOrdem: string | null = null
 
   escolherMarca(){
     this.MostrarMarcas = !
@@ -20,24 +23,21 @@ export class HomeComponent {
   onBrandSelected(Brand: string){
     this.SelectedBrand = Brand
     this.MostrarMarcas = false
-    this.mostrarBotaoMarca = false
+
+
   }
-
-
-  mostrarBotaoOrdem = true
-
-  MostrarOrdem = false
-  SelectedOrdem: string | null = null
 
   escolherOrdem(){
     this.MostrarOrdem = !
     this.MostrarOrdem
+
   }
 
   onOrdemSelected(Ordem: string){
     this.SelectedOrdem = Ordem
     this.MostrarOrdem = false
-    this.mostrarBotaoOrdem = false
+
+
   }
 
 }

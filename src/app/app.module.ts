@@ -10,6 +10,7 @@ import { BaseUiComponent } from './_components/base-ui/base-ui.component';
 import { MainComponent } from './_components/main/main.component';
 import { BrandSelectorComponent } from './brand-selector/brand-selector.component';
 import { OrdemSelectorComponent } from './ordem-selector/ordem-selector.component';
+import { CarrosselComponent } from './carrossel/carrossel.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { OrdemSelectorComponent } from './ordem-selector/ordem-selector.componen
     MainComponent,
     BrandSelectorComponent,
     OrdemSelectorComponent,
+    CarrosselComponent,
   ],
   imports: [
     BrowserModule,
