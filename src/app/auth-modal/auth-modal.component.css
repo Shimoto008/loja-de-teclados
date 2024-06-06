@@ -1,5 +1,22 @@
-.mat-raised-button color{
-  color: black;
-  background-color: orangered;
+.container{
+  display: flex;
+  height: 400px;
+  width: 500px;
+  align-items: center;
+  overflow: hidden;
 
 }
+
+mat-form-field{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+mat-tab{
+  color: orangered;
+}
+
+
+

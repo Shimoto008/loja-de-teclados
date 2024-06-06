@@ -22,13 +22,15 @@ export class AuthModalComponent {
      });
 
      this.registerForm = this.fb.group({
-      username: ['',
-        Validators.required],
-        email: ['',[
-          Validators.required,
-        Validators.email]],
-          password: ['',
-          [Validators.required, Validators.minLength(6)]],
+      nome: ['',Validators.required],
+
+        sobrenome: ['',Validators.required],
+
+        celular: ['', Validators.required],
+
+        email: ['',[Validators.required, Validators.email]],
+
+          password: ['', [Validators.required, Validators.minLength(6)]],
      });
     }
 
