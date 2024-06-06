@@ -24,8 +24,6 @@ export class AuthModalComponent {
      this.registerForm = this.fb.group({
       nome: ['',Validators.required],
 
-        sobrenome: ['',Validators.required],
-
         celular: ['', Validators.required],
 
         email: ['',[Validators.required, Validators.email]],
